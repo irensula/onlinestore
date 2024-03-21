@@ -14,6 +14,13 @@ body {
 .title {
     color: #D8F9B3;
 }
+h2 {
+    color: rgb(255,104,104);
+    font-family: "Playpen Sans", cursive;
+    font-size: 80px;
+    text-align: center;
+    padding: 50px;
+}
 header {
     height: 300px;
     background-color: rgba(255,104,104,0.47);
