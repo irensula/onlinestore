@@ -13,13 +13,7 @@ body {
 /* titles */
 .title {
     color: #D8F9B3;
-}
-h2 {
-    color: rgb(255,104,104);
     font-family: "Playpen Sans", cursive;
-    font-size: 80px;
-    text-align: center;
-    padding: 50px;
 }
 header {
     height: 300px;
@@ -27,40 +21,67 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-bottom: 100px;
 }
 .logo {
-    display: inline-block;
     width: 25%;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 .logo img {
-    align-self: center;
+    width: 200px;
+}
+nav {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    padding: 0px 200px;
+    position: absolute;
+    top: 250px;
+}
+.nav-item {
+    width: 200px;
+    height: 60px;
+    background-color: #D8F9B3;
+    border: none;
+    font-size: 20px;
+    border-radius: 15px;
+    margin-top: 10px;
+    text-transform: uppercase;
+    text-align: center;
+    
 }
 .main-title {
-    display: inline-block;
     width: 75%;
 }
 .main-title h1 {
     font-family: "Playpen Sans", cursive;
-    font-size: 130px;
+    font-size: 100px;
     align-self: center;
 }
+.main-section {
+    padding: 50px 200px;
+}
 .title-image {
-    width: 632px;
-    height: 624px;
+    width: 50%;
+    height: 500px;
     object-fit: cover;
     display: inline-block;
+    margin-right: 50px;
+}
+.main-text {
+    display: inline-block;
+    width: 40%;
+    vertical-align: top;
 }
 .main-text h2 {
-    font-size: 80px;
+    font-size: 50px;
+    margin: 30px 0px;
 }
 .main-text p {
-    font-size: 30px;
-}
-section {
-    padding: 30px;
+    font-size: 20px;
+    line-height: 25px;
+    text-align: justify;
 }
 /* valikoima */
 .divContent {
@@ -73,8 +94,10 @@ section {
     padding: 20px;
     line-height: 30px;
 }
-.divItem img {
+.book-img {
     width: 100%;
+    height: 150px;
+    object-fit: cover;
 }
 .divItem h6{
     font-weight: 600;
@@ -97,7 +120,7 @@ section {
     background-color: #D8F9B3;
     border: none;
     font-size: 20px;
-    border-radius: 30px;
+    border-radius: 15px;
     margin-top: 10px;
 }
 @media only screen and (max-width: 650px) {
