@@ -14,7 +14,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playpen+Sans:wght@100..800&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Pikku Utelias</title>
 
 </head>
@@ -41,23 +42,24 @@
         </div>
     </header>
     <nav>
-            <p class="nav-item">Etusivu</p>
-            <p class="nav-item">Tuotteet</p>
-            <p class="nav-item">Bloogi</p>
-            <p class="nav-item">Yhteistiedot</p>
-            <p class="nav-item">Kirjaudu</p>
+        <ul>
+            <li>Etusivu</li>
+            <li>Tuotteet</li>
+            <li>Bloogi</li>
+            <li>Yhteistiedot</li>
+            <li>Kirjaudu</li>
+        </ul>
     </nav>
     <main>
-        <section class="main-section">
-            
+        <section class="section-container">
             <img class="title-image" src="images/title-image.jpg" alt="">
             <div class="main-text">
                 <h2 class="title">Kirjat lapsille</h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta et consectetur distinctio hic suscipit reiciendis similique quidem voluptatum cum, commodi repellendus eligendi quis aliquam provident modi magni excepturi, deserunt possimus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta ab minima ullam eius officia repellat quos veritatis accusantium recusandae inventore voluptas quis, perspiciatis numquam! Incidunt odio quis ab. Cumque, ad.</p>
             </div>
         </section>
-        <section>
-            <h2 class="title">Otsikko</h2>
+        <section class="valikoima">
+            <h2 class="title">Meidän valikoima</h2>
             <div class="divContent">
                 
                 <div class="divItem">
@@ -69,42 +71,42 @@
                 </div>
                 <div class="divItem">
                     <img class="book-img" src="images/02-kanijengi-kaahaa.png" alt="">
-                    <h6>02-kanijengi-kaahaa.png</h6>
-                    <p class="author">Michelle Robinson</p>
-                    <p class="price">15.90</p>
+                    <h6>Kanijengi kaahaa</h6>
+                    <p class="author">Philip Ardagh, Ben Mantle</p>
+                    <p class="price">16.90</p>
                     <button class="add-button">Lisää osotokoriin</button>
                 </div>        
                 <div class="divItem">
                     <img class="book-img" src="images/03-kanijengi-veneilee.jpg" alt="">
-                    <h6>Punainen nosturi, keltainen kuormuri</h6>
-                    <p class="author">Michelle Robinson</p>
-                    <p class="price">15.90</p>
+                    <h6>Kanijengi veneilee</h6>
+                    <p class="author">Philip Ardagh, Ben Mantle</p>
+                    <p class="price">19.90</p>
                     <button class="add-button">Lisää osotokoriin</button>
                 </div>
                 <div class="divItem">
                     <img class="book-img" src="images/04-lehtirosvo.jpg" alt="">
-                    <h6>Punainen nosturi, keltainen kuormuri</h6>
-                    <p class="author">Michelle Robinson</p>
-                    <p class="price">15.90</p>
+                    <h6>Lehtirosvo</h6>
+                    <p class="author">Alice Hemming, Nicola Slater</p>
+                    <p class="price">16.90</p>
                     <button class="add-button">Lisää osotokoriin</button>
                 </div>
                 <div class="divItem">
                     <img class="book-img" src="images/05-herra-hakkarainen-harrastaa.jpg" alt="">
-                    <h6>Punainen nosturi, keltainen kuormuri</h6>
-                    <p class="author">Michelle Robinson</p>
-                    <p class="price">15.90</p>
+                    <h6>Herra Hakkarainen harrastaa</h6>
+                    <p class="author">Mauri Kunnas</p>
+                    <p class="price">23.90</p>
                     <button class="add-button">Lisää osotokoriin</button>
                 </div>
                 <div class="divItem">
                     <img class="book-img" src="images/06-taikatalvi.png" alt="">
-                    <h6>Punainen nosturi, keltainen kuormuri</h6>
-                    <p class="author">Michelle Robinson</p>
-                    <p class="price">15.90</p>
+                    <h6>Taikatalvi</h6>
+                    <p class="author">Tove Jansson</p>
+                    <p class="price">18.50</p>
                     <button class="add-button">Lisää osotokoriin</button>
                 </div>
             </div>
     </section>
-    <section>
+    <section class="section-container">
         <div class="text-container">
             <h2 class="title">Lasten kirjojen lukemisen merkitys</h2>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do 
@@ -115,30 +117,41 @@
             pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa 
             qui officia deserunt mollit anim id est laborum.</p>
         </div>
-        <img src="images/eri-ikaiset.jpg" alt="">
-        
+        <img class="img-container" src="images/eri-ikaiset.jpg" alt="">
     </section>
-    <section>
-        <h2 class="title">Kaikkille lapsille</h2>
-        <div class="divContent">
-            <div class="divItem">
+
+    <section class="section-container">
+        <h2 class="title center">Kaikkille lapsille</h2>
+        <div class="circle-img-container">
+            <div class="circle-item">
                 <img class="circle-img" src="images/baby-reading.jpg" alt="">
                 <h3>Vauvoille</h3>
             </div>
-            <div class="divItem">
+            <div class="circle-item">
                 <img class="circle-img" src="images/boy-reading.png" alt="">
                 <h3>Juniorille</h3>
             </div>
-            <div class="divItem">
+            <div class="circle-item">
                 <img class="circle-img" src="images/schoolgirl.jpg" alt="">
                 <h3>Opiskelijoille</h3>
             </div>
-            <div class="divItem">
+            <div class="circle-item">
                 <img class="circle-img" src="images/tutkija.png" alt="">
                 <h3>Pienille utkijoille</h3>
             </div>
         </div>
     </section>
     </main>
+    <footer>
+        <div class="some">
+            <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+            <a href="mailto:someone@example.com"><i class="fa-solid fa-envelope"></i></a>
+            <a href="tel:358-46-9395395"><i class="fa-solid fa-phone"></i></a>
+        </div>
+        <span id="year"></span><p class="copyright">© All rights reserved.</p>
+    </footer>
+    <script>document.getElementById("year").innerHTML = new Date().getFullYear();</script>
+    <script src="https://kit.fontawesome.com/02135387da.js" crossorigin="anonymous"></script>
 </body>
 </html>

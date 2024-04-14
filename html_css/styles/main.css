@@ -12,8 +12,10 @@ body {
 }
 /* titles */
 .title {
-    color: #D8F9B3;
+    color: #FF6868;
     font-family: "Playpen Sans", cursive;
+    font-size: 50px;
+    margin: 30px 0px;
 }
 header {
     height: 300px;
@@ -33,23 +35,24 @@ header {
     width: 200px;
 }
 nav {
-    display: grid;
-    grid-template-columns: auto auto auto auto auto;
     padding: 0px 200px;
     position: absolute;
-    top: 250px;
+    top: 275px;
+    margin: 0 auto;
 }
-.nav-item {
-    width: 200px;
-    height: 60px;
+li {
+    display: inline-block;
+    width: 180px;
+    height: 40px;
     background-color: #D8F9B3;
     border: none;
-    font-size: 20px;
+    font-size: 18px;
     border-radius: 15px;
-    margin-top: 10px;
+    margin-right: 30px;
     text-transform: uppercase;
     text-align: center;
-    
+    padding-top: 22px;
+    vertical-align: middle;
 }
 .main-title {
     width: 75%;
@@ -59,7 +62,7 @@ nav {
     font-size: 100px;
     align-self: center;
 }
-.main-section {
+.section-container {
     padding: 50px 200px;
 }
 .title-image {
@@ -74,20 +77,19 @@ nav {
     width: 40%;
     vertical-align: top;
 }
-.main-text h2 {
-    font-size: 50px;
-    margin: 30px 0px;
-}
-.main-text p {
+.main-text p, .text-container p {
     font-size: 20px;
     line-height: 25px;
     text-align: justify;
 }
 /* valikoima */
+.valikoima h2 {
+    padding: 30px 200px;
+}
 .divContent {
-    padding: 30px 50px;
     display: grid;
     grid-template-columns: auto auto auto auto auto auto;
+    padding: 0px 30px;
 }
 .divItem {
     margin: 10px;
@@ -98,21 +100,81 @@ nav {
     width: 100%;
     height: 150px;
     object-fit: cover;
+    margin-bottom: 20px;
 }
 .divItem h6{
     font-weight: 600;
-    font-size: 20px;
+    font-size: 15px;
+    line-height: 18px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 1; 
+    -webkit-box-orient: vertical;
+    margin-bottom: 10px;
 }
 .author {
     font-size: 15px;
+    margin-bottom: 15px;
 }
 .price {
-    font-size: 30px;
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+.circle-img-container {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    padding-top: 30px;
+}
+.circle-item {
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
 }
 .circle-img {
     border-radius: 50%;
-    width: 300px;
+    width: 200px;
 }
+.circle-item h3 {
+    padding-top: 30px;
+    font-size: 25px;
+}
+.img-container {
+    width: 50%;
+    height: 500px;
+    object-fit: cover;
+    display: inline-block;
+    margin-left: 50px;
+}
+.text-container {
+    display: inline-block;
+    width: 40%;
+    vertical-align: top;
+}
+.center {
+    text-align: center;
+}
+footer {
+    height: 200px;
+    background-color: rgba(255,104,104,0.47);
+    padding: 50px 200px;
+}
+.some {
+    margin: 50px 0px;
+}
+.some a {
+    color: #000;
+    font-size: 30px;
+    padding-right: 50px;
+}
+#year {
+    display: inline-block;
+    padding-right: 15px;
+}
+.copyright {
+    display: inline-block;
+}
+
 /* buttons */
 .add-button {
     width: 100%;
